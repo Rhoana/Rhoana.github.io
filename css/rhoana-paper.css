@@ -3,19 +3,19 @@
   font-family: 'Barlow Condensed';
   font-style: normal;
   font-weight: 400;
-  src: url('fonts/barlow-condensed-v1-latin-regular.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/barlow-condensed-v1-latin-regular.eot'); /* IE9 Compat Modes */
   src: local('Barlow Condensed Regular'), local('BarlowCondensed-Regular'),
-       url('fonts/barlow-condensed-v1-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('fonts/barlow-condensed-v1-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('fonts/barlow-condensed-v1-latin-regular.woff') format('woff'), /* Modern Browsers */
-       url('fonts/barlow-condensed-v1-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('fonts/barlow-condensed-v1-latin-regular.svg#BarlowCondensed') format('svg'); /* Legacy iOS */
+       url('../fonts/barlow-condensed-v1-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/barlow-condensed-v1-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/barlow-condensed-v1-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/barlow-condensed-v1-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/barlow-condensed-v1-latin-regular.svg#BarlowCondensed') format('svg'); /* Legacy iOS */
 }
 
 body {
     background-color: #dbdbdb;
     font-family: 'Barlow Condensed';
-    background-image: url("background-gradient.png");
+    background-image: url("../images/background-gradient.png");
     background-repeat: no-repeat;
     background-position: 50% 0%; 
     background-attachment: fixed;
@@ -23,12 +23,12 @@ body {
 }
 
 .title-information {
-    font-size: 28px;
+    font-size: 32px;
     padding-top: 10px;
 }
 
 .author-information {
-    font-size: 18px;
+    font-size: 26px;
     padding-bottom: 10px;
 }
 
@@ -55,7 +55,7 @@ body {
 }
 
 .abstract {
-    font-size: 14px;
+    font-size: 20px;
     background-color: #050505cc;
     width: 60%;
     margin-left: 20%;
@@ -75,7 +75,7 @@ body {
     padding: 5px;
     color: white;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .paper-link:link {
