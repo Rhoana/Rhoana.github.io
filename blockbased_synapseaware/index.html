@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Scalable Biologically-Aware Skeleton Generation for Connectomic Volumes" />
+    <meta name="keywords" content="Biologically-Aware,Skeleton Generation,Connectomics" />
+    <link rel="stylesheet" type="text/css" href="../css/rhoana-paper.css" title="Rhoana Paper CSS" media="screen,projection" />
+    <title>Biologically-Aware Skeleton Generation</title>
+</head>
+
+<body>
+    <div class="paper-header">
+        <p class="title-information">
+            Scalable Biologically-Aware Skeleton Generation for Connectomic Volumes
+        </p>
+        <p class="author-information">
+            Brian Matejek, Tim Franzmeyer, Donglai Wei, Xueying Wang, Jinglin Zhao, <br> K&aacute;lm&aacute;n Pal&aacute;gyi, Jeff W. Lichtman, Hanspeter Pfister
+        </p>
+    </div>
+    <div class="teaser-figure">
+        <img class="teaser-image" src="teaser.png">
+    </div>
+    <div class="abstract">
+        <p style="padding: 10px">
+        As connectomic datasets exceed hundreds of terabytes in size, accurate and efficient skeleton generation of the label volumes has evolved into a critical component of the computation pipeline used for analysis, evaluation, visualization, and error correction. We propose a novel topological thinning strategy that uses biological-constraints to produce accurate centerlines from segmented neuronal volumeshile still maintaining biologically relevant properties. Current methods are either agnostic to the underlying biology, have non-linear running times as a function of the number of input voxels, or both. First, we eliminate from the input segmentation biologically-infeasible bubbles, pockets of voxels incorrectly labeled within a neuron, to improve segmentation accuracy, allow for more accurate centerlines, and increase processing speed. Next, a Convolutional Neural Network (CNN) detects cell bodies from the input segmentation, allowing us to anchor our skeletons to the somata. Lastly, a synapse-aware topological thinning approach produces expressive skeletons for each neuron with a nearly one-to-one correspondence between endpoints and synapses. We simultaneously estimate geometric properties of neurite width and geodesic distance between synapse and cell body, improving accuracy by 47.5% and 62.8% over baseline methods. We separate the skeletonization process into a series of computation steps, leveraging data-parallel strategies to increase throughput significantly. We demonstrate our results on over 1250 neurons and neuron fragments from three different species, processing over one million voxels per second per CPU with linear scalability.
+        </p>
+    </div>
+    <div class="links">
+        <!--<a class="paper-link" href="https://vcg.seas.harvard.edu/publications/biologically-constrained-graphs/paper">Paper</a>-->
+        <a class="paper-link" href="https://github.com/Rhoana/blockbased_synapseaware">Code</a>
+        <a class="paper-link" href="https://github.com/Rhoana/soma_segmentation">Soma Segmentation Code and Model</a>
+    </div>
+</body>
+</html>
