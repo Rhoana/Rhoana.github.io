@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Subgraph Enumeration on the Connectome" />
+    <meta name="keywords" content="Biologically-Aware,Subgraph Enumeration,Connectomics" />
+    <link rel="stylesheet" type="text/css" href="../css/rhoana-paper.css" title="Rhoana Paper CSS" media="screen,projection" />
+    <title>Subgraph Enumeration on the Connectome</title>
+</head>
+
+<body>
+    <div class="paper-header">
+        <p class="title-information">
+            Subgraph Enumeration on the Connectome
+        </p>
+        <p class="author-information">
+            Brian Matejek, Donglai Wei, Tianyi Chen, Charalampos E. Tsourakakis, Michael Mitzenmacher, Hanspeter Pfister
+        </p>
+    </div>
+    <div class="teaser-figure">
+        <img class="teaser-image" style="width: 60%; margin-left: 20%;" src="teaser.png">
+    </div>
+    <div class="abstract">
+        <p style="padding: 10px">
+        Following significant advances in image acquisition, synapse detection, and neuronal segmentation in connectomics, researchers have extracted an increasingly diverse set of wiring diagrams from brain tissue. Neuroscientists frequently represent these wiring diagrams as graphs with nodes corresponding to a single neuron and edges indicating synaptic connectivity. The edges can contain ``colors'' or ``labels'', indicating excitatory versus inhibitory connections, among other things. By representing the wiring diagram as a graph, we can begin to identify motifs, the frequently occurring subgraphs that correspond to specific biological functions. Most analyses on these wiring diagrams have focused on hypothesized motifs--those we expect to find. However, one of the goals of connectomics is to identify biologically-significant motifs that we did not previously hypothesize. To identify these structures, we need large-scale subgraph enumeration to find the frequencies of all unique motifs. Exact subgraph enumeration is a computationally expensive task, particularly in the edge dense wiring diagrams. We propose a parallel, general-purpose subgraph enumeration strategy to count motifs in the connectome. Next, we introduce a divide-and-conquer community-based subgraph enumeration strategy which can allow for enumeration per brain region. Lastly, we allow for differentiation of edges by types to better reflect the underlying biological properties of the graph. We demonstrate our results on eleven connectomes and publish for future analyses extensive overviews for the 26 trillion subgraphs enumerated that required approximately 9.25 years of computation time.
+        </p>
+    </div>
+    <div class="links">
+        <!-- <a class="paper-link" href="https://vcg.seas.harvard.edu/publications/biologically-constrained-graphs/paper">Paper</a>
+        <a class="paper-link" href="https://github.com/Rhoana/blockbased_synapseaware">Code</a>
+        <a class="paper-link" href="https://github.com/Rhoana/soma_segmentation">Soma Segmentation Code and Model</a>
+		<span style="float: right;">
+		    <span style="font-size: 1.125rem">Links to Datasets:</span>&nbsp;&nbsp;
+			<a class="paper-link" target="_blank" href="http://flyem.dvid.io/mushroombody">FIB-25</a>
+			<a class="paper-link" target="_blank" href="https://neuroglancer-demo.appspot.com/#!%7B%22dimensions%22:%7B%22x%22:%5B1.28e-7%2C%22m%22%5D%2C%22y%22:%5B1.28e-7%2C%22m%22%5D%2C%22z%22:%5B1.2e-7%2C%22m%22%5D%7D%2C%22position%22:%5B416.5%2C832.5%2C416.5%5D%2C%22crossSectionScale%22:1%2C%22projectionScale%22:2048%2C%22layers%22:%5B%7B%22type%22:%22image%22%2C%22source%22:%22precomputed://https://rhoana.rc.fas.harvard.edu/ng/jwr15-120_im%22%2C%22tab%22:%22source%22%2C%22name%22:%22jwr15-120_im%22%7D%5D%2C%22selectedLayer%22:%7B%22visible%22:true%2C%22layer%22:%22jwr15-120_im%22%7D%2C%22layout%22:%224panel%22%7D">JWR</a>
+			<a class="paper-link" target="_blank" href="https://storage.googleapis.com/j0126-nature-methods-data/GgwKmcKgrcoNxJccKuGIzRnQqfit9hnfK1ctZzNbnuU/README.txt">J0126</a>        
+		</span>
+		<br>
+		<br> -->
+    </div>
+</body>
+</html>
